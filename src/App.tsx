@@ -6,6 +6,7 @@ import ListInput from "./components/ListInput";
 import TaskSchedule from "./components/TaskSchedule";
 import ListData from "./ListData";
 import {observer} from "mobx-react";
+import MainTitle from "./components/MainTitle/MainTitle";
 
 
 const StyledApp = styled.article`
@@ -78,7 +79,7 @@ const App = observer(()=> {
 
   return (
     <StyledApp className="App">
-        <TitleTodos>todos</TitleTodos>
+        <MainTitle>todos</MainTitle>
         <ToDoMainForm>
             <ListInput/>
             <TaskSchedule/>
